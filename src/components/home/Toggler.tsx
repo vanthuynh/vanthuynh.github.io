@@ -1,14 +1,13 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 
 interface ThemeChange {
   darkMode: boolean;
-  handleClick?: MouseEventHandler;
+  handleClick: (e: React.MouseEvent<HTMLSpanElement>) => void;
 }
 
 export default function Toggler({ darkMode, handleClick }: ThemeChange) {
   const transition = "all 250ms ease";
-
   return (
     <Box
       fontSize={"1.5rem"}
