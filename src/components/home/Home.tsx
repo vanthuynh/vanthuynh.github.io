@@ -9,17 +9,6 @@ import { info } from "../../info/Info";
 
 import Canvas from "./Canvas";
 
-const styles = {
-  container: {
-    position: "absolute",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#000000cc",
-  } as React.CSSProperties,
-};
-
 export default function Home() {
   return (
     <Box
@@ -28,10 +17,18 @@ export default function Home() {
       flexDirection={{ xs: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"center"}
-      minHeight={"calc(100vh - 175px)"}
+      // minHeight={"calc(100vh - 175px)"}
     >
       <Canvas />
-      <div style={styles.container}>
+      <Box
+        position={"absolute"}
+        display={"flex"}
+        flexDirection={{ xs: "column", md: "row" }}
+        alignItems={"center"}
+        justifyContent={"center"}
+        minHeight={"calc(100vh - 175px)"}
+        bgcolor={"red"}
+      >
         <Box
           className={classNames(Style.avatar, Style.shadowed)}
           alt={"image of developer"}
@@ -81,7 +78,7 @@ export default function Home() {
             ))}
           </Box>
         </Box>
-      </div>
+      </Box>
     </Box>
   );
 }
