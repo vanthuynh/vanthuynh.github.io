@@ -134,11 +134,11 @@ const Canvas: FC = () => {
 
   return (
     <m.canvas
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 0.6 }}
       transition={{ duration: 0.4, delay: 1.4 }}
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full"
+      className="absolute opacity-100 inset-0 w-full h-full"
     />
   );
 };

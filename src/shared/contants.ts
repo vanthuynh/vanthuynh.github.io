@@ -7,6 +7,9 @@ export const characters = [
 ];
 
 export const canvasImages = [
+  "python",
+  "java",
+  "c",
   "html",
   "javascript",
   "css",

@@ -16,6 +16,7 @@ const styles = {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#000000cc",
   } as React.CSSProperties,
 };
 
