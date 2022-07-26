@@ -5,7 +5,11 @@ import { Box } from "@mui/material";
 
 const iconClass = "fa fa-circle";
 
-function Terminal(props) {
+interface TextProps {
+  text?: React.ReactNode;
+}
+
+function Terminal(props: TextProps) {
   const { text } = props;
 
   return (

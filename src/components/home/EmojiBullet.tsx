@@ -1,7 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-function EmojiBullet(props) {
+interface Description {
+  // text: React.ReactNode;
+  text: string;
+  emoji: string;
+}
+
+function EmojiBullet(props: Description) {
   const { emoji, text } = props;
 
   return (
