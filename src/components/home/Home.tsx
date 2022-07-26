@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "./Home.module.scss";
-import me from "../../img/self.png";
+// import me from "../../img/self.png";
+import me from "../../img/self2.png";
 import classNames from "classnames";
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
@@ -27,7 +28,7 @@ export default function Home() {
         alignItems={"center"}
         justifyContent={"center"}
         minHeight={"calc(100vh - 175px)"}
-        bgcolor={"red"}
+        bgcolor={"transparent"}
       >
         <Box
           className={classNames(Style.avatar, Style.shadowed)}
@@ -40,7 +41,7 @@ export default function Home() {
           borderRadius={"50%"}
           p={"0.75rem"}
           mb={{ xs: "1rem", sm: 0 }}
-          mr={{ xs: 0, md: "2rem" }}
+          mr={{ xs: 0, md: "0rem" }}
         />
         <Box>
           <h1>

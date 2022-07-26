@@ -1,4 +1,5 @@
-import self from "../img/self.png";
+// import self from "../img/self.png";
+import self from "../img/self2.png";
 import mock1 from "../img/mock1.png";
 import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
@@ -25,7 +26,7 @@ export const info = {
   firstName: "Van",
   lastName: "Huynh",
   initials: "vh", // the example uses first and last, but feel free to use three or more if you like.
-  position: "aspiring Software Engineer",
+  position: " an aspiring Software Engineer",
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -41,7 +42,7 @@ export const info = {
     },
     {
       emoji: "💼",
-      text: "Currently Software Engineer at Wunderkind Co.",
+      text: "SWE intern at Wunderkind Co.",
     },
     {
       emoji: "📧",
