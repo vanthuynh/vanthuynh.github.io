@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import Style from "./BaseLayout.module.scss";
 import Navbar from "./Navbar";
 import Home from "./home/Home";
@@ -10,7 +10,7 @@ import { Box, Grid } from "@mui/material";
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);
 
-  function handleClick() {
+  function handleClick(event: MouseEvent) {
     setDarkMode(!darkMode);
   }
 
