@@ -13,7 +13,7 @@ function EmojiBullet(props: Description) {
   return (
     <Box
       component={"li"}
-      fontSize={"1rem"}
+      fontSize={{ xs: "2rem", md: "1rem" }}
       lineHeight={1.5}
       style={{ cursor: "default" }}
     >

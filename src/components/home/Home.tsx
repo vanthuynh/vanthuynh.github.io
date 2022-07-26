@@ -26,8 +26,10 @@ export default function Home() {
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
-        minHeight={"calc(100vh - 175px)"}
-        bgcolor={"red"}
+        // minHeight={"calc(100vh - 175px)"}
+        height={"100%"}
+        width={"100%"}
+        // bgcolor={"transparent"}
       >
         <Box
           className={classNames(Style.avatar, Style.shadowed)}
@@ -35,8 +37,8 @@ export default function Home() {
           style={{ background: info.gradient }}
           component={"img"}
           src={me}
-          width={{ xs: "35vh", md: "40vh" }}
-          height={{ xs: "35vh", md: "40vh" }}
+          width={{ xs: "50vh", md: "40vh" }}
+          height={{ xs: "50vh", md: "40vh" }}
           borderRadius={"50%"}
           p={"0.75rem"}
           mb={{ xs: "1rem", sm: 0 }}
