@@ -6,8 +6,10 @@ interface IntroDescription {
   label: string;
 }
 
-function SocialIcon(props: IntroDescription) {
-  const { link, icon, label } = props;
+function SocialIcon({ link, icon, label }: IntroDescription) {
+  console.log(link);
+  console.log(icon);
+  console.log(label);
   return (
     <a target="_blank" aria-label={label} rel="noopener noreferrer" href={link}>
       <i className={icon} aria-hidden="true" />

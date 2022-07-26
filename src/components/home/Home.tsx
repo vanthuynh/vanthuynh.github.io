@@ -41,7 +41,7 @@ export default function Home() {
           borderRadius={"50%"}
           p={"0.75rem"}
           mb={{ xs: "1rem", sm: 0 }}
-          mr={{ xs: 0, md: "0rem" }}
+          mr={{ xs: 0, md: "1rem" }}
         />
         <Box>
           <h1>
@@ -66,7 +66,7 @@ export default function Home() {
           <Box
             display={"flex"}
             gap={"1.5rem"}
-            justifyContent={"center"}
+            justifyContent={{xs:"center", md:"left"}}
             fontSize={{ xs: "2rem", md: "2.5rem" }}
           >
             {info.socials.map((social, index) => (

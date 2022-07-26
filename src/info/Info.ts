@@ -51,12 +51,12 @@ export const info = {
   ],
   socials: [
     {
-      link: "https://github.com",
+      link: "https://github.com/vanthuynh",
       icon: "fa fa-github",
       label: "github",
     },
     {
-      link: "https://linkedin.com",
+      link: "https://linkedin.com/vanthuynh",
       icon: "fa fa-linkedin",
       label: "linkedin",
     },
