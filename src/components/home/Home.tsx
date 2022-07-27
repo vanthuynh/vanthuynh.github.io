@@ -8,21 +8,21 @@ import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 
-import Canvas from "./Canvas";
+import Canvas from "../Extra/Canvas";
 
 export default function Home() {
   return (
     <Box
       component={"main"}
       display={"flex"}
-      flexDirection={{ xs: "column", md: "row" }}
+      flexDirection={{ xs: "column", md: "column" }}
       alignItems={"center"}
       justifyContent={"center"}
       // minHeight={"calc(100vh - 175px)"}
     >
       <Canvas />
       <Box
-        position={"absolute"}
+        // position={"absolute"}
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
