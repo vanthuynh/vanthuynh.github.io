@@ -56,7 +56,7 @@ export const info = {
       label: "github",
     },
     {
-      link: "https://linkedin.com/vanthuynh",
+      link: "https://www.linkedin.com/in/vanthuynh/",
       icon: "fa fa-linkedin",
       label: "linkedin",
     },
