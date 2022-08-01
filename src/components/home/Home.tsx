@@ -9,13 +9,15 @@ import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 
 import Canvas from "../Extra/Canvas";
+import Experience from "../Addition/Experience";
 
 export default function Home() {
   return (
     <Box
       component={"main"}
       display={"flex"}
-      flexDirection={{ xs: "column", md: "column" }}
+      // flexDirection={{ xs: "column", md: "column" }}
+      flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
       // minHeight={"calc(100vh - 175px)"}
@@ -27,7 +29,9 @@ export default function Home() {
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
-        minHeight={"calc(100vh - 175px)"}
+        // minHeight={"calc(100vh - 175px)"}
+        height={'100%'}
+        width={'100%'}
         bgcolor={"transparent"}
       >
         <Box
@@ -79,6 +83,17 @@ export default function Home() {
             ))}
           </Box>
         </Box>
+      </Box>
+      <Box 
+        zIndex={"1"} 
+        display={"flex"}
+        // flexDirection={{ xs: "column", md: "row" }}
+        alignItems={"center"}
+        justifyContent={"center"}
+        minHeight={"calc(100vh - 175px)"}
+        maxWidth={"90%"}
+        bgcolor={"transparent"}>
+        <Experience />
       </Box>
     </Box>
   );

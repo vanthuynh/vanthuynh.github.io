@@ -138,7 +138,7 @@ const Canvas: FC = () => {
       animate={{ opacity: 0.6 }}
       transition={{ duration: 0.4, delay: 1.4 }}
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full"
+      className="tw-absolute tw-inset-0 tw-w-full tw-h-full"
     />
   );
 };
