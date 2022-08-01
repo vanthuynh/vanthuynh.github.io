@@ -87,10 +87,9 @@ export default function Home() {
       <Box 
         zIndex={"1"} 
         display={"flex"}
-        // flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
-        minHeight={"calc(100vh - 175px)"}
+        minHeight={"calc(100vh - 50px)"}
         maxWidth={"90%"}
         bgcolor={"transparent"}>
         <Experience />
