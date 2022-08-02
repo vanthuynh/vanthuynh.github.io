@@ -16,11 +16,9 @@ export default function Home() {
     <Box
       component={"main"}
       display={"flex"}
-      // flexDirection={{ xs: "column", md: "column" }}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
-      // minHeight={"calc(100vh - 175px)"}
     >
       <Canvas />
       <Box
