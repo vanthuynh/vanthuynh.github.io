@@ -86,6 +86,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box 
+        zIndex={"1"} 
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
