@@ -8,6 +8,8 @@ export const characters = [
 
 export const canvasImages = [
   "python",
+  "django",
+  "docker",
   "java",
   "c",
   "html",
@@ -15,8 +17,6 @@ export const canvasImages = [
   "css",
   "react",
   "typescript",
-  "vue",
-  "svelte",
   "nodejs",
   "tailwindcss",
   "sass",
@@ -24,7 +24,6 @@ export const canvasImages = [
   "firebase",
   "vscode",
   "git",
-  "vite",
   "webpack",
 ].map(
   (icon) =>
