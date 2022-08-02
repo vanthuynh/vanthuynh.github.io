@@ -88,9 +88,9 @@ export default function Home() {
         zIndex={"1"} 
         display={"flex"}
         alignItems={"center"}
-        justifyContent={"center"}
+        justifyContent={"left"}
         minHeight={"calc(100vh - 50px)"}
-        maxWidth={"90%"}
+        maxWidth={{xs:"90%", md:"100vh"}}
         bgcolor={"transparent"}>
         <Experience />
       </Box>

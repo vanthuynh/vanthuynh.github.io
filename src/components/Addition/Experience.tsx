@@ -17,7 +17,7 @@ const styles = {
         marginBottom: "10px",
     } as React.CSSProperties,
     subheadline: {
-        marginBottom: "-10px",
+        marginBottom: "5px",
     } as React.CSSProperties,
 };
 export default function Experience() {
