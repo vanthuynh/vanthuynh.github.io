@@ -1,69 +1,103 @@
-import React from 'react';
+import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import exp1 from '../../img/wunderkind.png';
+// import WorkIcon from "@material-ui/icons/Work";
 
-import w1 from '../../img/wunderkind.png';
-import './Experience.scss';
-
-
-const styles = {
-    wrapper: {
-      marginLeft: "10px",
-    } as React.CSSProperties,
-    image: {
-        width: "60px",
-        height: "auto",
-        float: "right",
-    } as React.CSSProperties,
-    headline: {
-        marginBottom: "10px",
-    } as React.CSSProperties,
-    subheadline: {
-        marginBottom: "5px",
-    } as React.CSSProperties,
-};
 export default function Experience() {
+    const items = [
+        {
+            date: "June 2022 – August 2022",
+            cardTitle: "Wunderkind",
+            cardSubtitle: "Software Engineer Intern",
+            cardDetailedText: "INFORMATION"
+        },
+        {
+            date: "June 2022 – August 2022",
+            cardTitle: "Wunderkind",
+            cardSubtitle: "Software Engineer Intern",
+            cardDetailedText: "INFORMATION"
+        },
+        {
+            date: "June 2022 – August 2022",
+            cardTitle: "Wunderkind",
+            cardSubtitle: "Software Engineer Intern",
+            cardDetailedText: "INFORMATION"
+        },
+        {
+            date: "August 2017 – Fall 2020",
+            cardTitle: "Santa Ana College",
+            cardSubtitle: "Math Tutor",
+            cardDetailedText:
+                "Teach math, Teach math, Teach math,Teach math, Teach math, Teach math, Teach math, Teach math, Teach math,Teach math, Teach math, Teach math",
+        },
+    ];
+
     return (
-        <div className="container">
-            <ul className="timeline">
-
-                <div className="timeline-event">
-                    <label className="timeline-event-icon"></label>
-                    <div className="timeline-event-copy">
-                        <p className="timeline-event-thumbnail">June, 2020 - Sept, 2020</p>
-                        <div style={styles.wrapper}>
-                            <img style={styles.image} src={w1} alt="wunderkind logo"/>
-                            <h2 style={styles.headline}>Wunderkind Co.</h2>
-                            <h3 style={styles.subheadline}>Software Engineering intern</h3>
-                            <p>Build a platform that recommend daily outfits and match stylist with users.</p>
-                        </div>
+        <section id="experience" className="about background-alt">
+            <div className="container" data-aos="fade-up">
+                <div className="section-title">
+                    <h2>Experience</h2>
+                </div>
+                <div className="row">
+                    <div className="col-lg-12 d-flex justify-content-center">
+                        <VerticalTimeline className="custom-line">
+                            {items.map((data, i) => {
+                                return (
+                                    <VerticalTimelineElement
+                                        key={i}
+                                        className="vertical-timeline-element--work"
+                                        contentStyle={{ background: "#343a40" }}
+                                        date={data.date}
+                                        dateClassName="timeline-date"
+                                        contentArrowStyle={{
+                                            borderRight:
+                                                "7px solid  rgb(33, 150, 243)",
+                                        }}
+                                        iconStyle={{
+                                            background: "#0563bb",
+                                            color: "#fff",
+                                        }}
+                                        // icon={<WorkIcon />}
+                                        icon={"fa fa-briefcase"}
+                                    >
+                                        <h3
+                                            className="vertical-timeline-element-title"
+                                            style={{
+                                                fontSize: "14",
+                                                color: "rgba(255, 255, 255, 0.8)",
+                                            }}
+                                        >
+                                            {data.cardTitle}
+                                        </h3>
+                                        <h4
+                                            className="vertical-timeline-element-subtitle"
+                                            style={{
+                                                fontSize: "1.2em",
+                                                fontWeight: "350",
+                                                color: "#7e8890",
+                                            }}
+                                        >
+                                            {data.cardSubtitle}
+                                        </h4>
+                                        <p
+                                            style={{
+                                                fontSize: "1em",
+                                                fontWeight: "350",
+                                                color: "#74808a",
+                                            }}
+                                        >
+                                            {data.cardDetailedText}
+                                        </p>
+                                    </VerticalTimelineElement>
+                                );
+                            })}
+                        </VerticalTimeline>
                     </div>
                 </div>
-                <div className="timeline-event">
-                    <label className="timeline-event-icon"></label>
-                    <div className="timeline-event-copy">
-                        <p className="timeline-event-thumbnail">June, 2020 - Sept, 2020</p>
-                        <div style={styles.wrapper}>
-                            <img style={styles.image} src={w1} alt="wunderkind logo"/>
-                            <h2 style={styles.headline}>Resolvve</h2>
-                            <h3 style={styles.subheadline}>Software Engineering intern</h3>
-                            <p>Build a platform that recommend daily outfits and match stylist with users.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="timeline-event">
-                    <label className="timeline-event-icon"></label>
-                    <div className="timeline-event-copy">
-                        <p className="timeline-event-thumbnail">June, 2020 - Sept, 2020</p>
-                        <div style={styles.wrapper}>
-                            <img style={styles.image} src={w1} alt="wunderkind logo"/>
-                            <h2 style={styles.headline}>Northrop Grumman Collaboration Project</h2>
-                            <h3 style={styles.subheadline}>Software Engineering intern</h3>
-                            <p>Build a platform that recommend daily outfits and match stylist with users.</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </ul>
-        </div>
+            </div>
+        </section>
     );
 }
