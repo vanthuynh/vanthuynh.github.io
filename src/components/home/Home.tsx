@@ -10,6 +10,7 @@ import { info } from "../../info/Info";
 
 import Canvas from "../Extra/Canvas";
 import Experience from "../Addition/Experience";
+import { Projects } from "../Addition/Projects";
 
 export default function Home() {
   return (
@@ -91,6 +92,15 @@ export default function Home() {
         maxWidth={{xs:"90%", md:"100vh"}}
         bgcolor={"transparent"}>
         <Experience />
+      </Box>
+      <Box
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        minHeight={"calc(100vh - 50px)"}
+        maxWidth={"90%"}
+        bgcolor={"transparent"}>
+        <Projects />
       </Box>
     </Box>
   );
