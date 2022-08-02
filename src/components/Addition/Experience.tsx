@@ -49,7 +49,7 @@ export default function Experience() {
                                     <VerticalTimelineElement
                                         key={i}
                                         className="vertical-timeline-element--work"
-                                        contentStyle={{ background: "#343a40" }}
+                                        contentStyle={{ background: "red" }}
                                         date={data.date}
                                         dateClassName="timeline-date"
                                         contentArrowStyle={{
@@ -61,7 +61,7 @@ export default function Experience() {
                                             color: "#fff",
                                         }}
                                         // icon={<WorkIcon />}
-                                        icon={"fa fa-briefcase"}
+                                        icon={<img src={exp1}/>}
                                     >
                                         <h3
                                             className="vertical-timeline-element-title"
