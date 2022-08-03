@@ -8,7 +8,7 @@ interface CallbackProps {
     menuItems: any;
 }
 
-const Buttons = ({ filterItem, setItem, menuItems }) => {
+const Buttons = ({ filterItem, setItem, menuItems }: CallbackProps) => {
   return (
     <>
       <div className="d-flex justify-content-center">
