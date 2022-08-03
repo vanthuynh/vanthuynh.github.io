@@ -28,8 +28,8 @@ export default function Home() {
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
-        // minHeight={"calc(100vh - 175px)"}
-        height={'100%'}
+        minHeight={"calc(100vh - 175px)"}
+        // height={'100%'}
         width={'100%'}
         bgcolor={"transparent"}
       >
@@ -83,7 +83,7 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
-      <Box 
+      {/* <Box 
         zIndex={"1"} 
         display={"flex"}
         alignItems={"center"}
@@ -92,7 +92,7 @@ export default function Home() {
         maxWidth={{xs:"90%", md:"100vh"}}
         bgcolor={"transparent"}>
         <Experience />
-      </Box>
+      </Box> */}
       <Box
         display={"flex"}
         alignItems={"center"}
