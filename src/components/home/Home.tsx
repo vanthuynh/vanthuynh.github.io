@@ -94,10 +94,12 @@ export default function Home() {
         <Experience />
       </Box> */}
       <Box
+        // position={"fixed"}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        minHeight={"calc(100vh - 50px)"}
+        // minHeight={"calc(100vh - 50px)"}
+        minHeight={"100vh"}
         maxWidth={"90%"}
         bgcolor={"transparent"}>
         <Projects />

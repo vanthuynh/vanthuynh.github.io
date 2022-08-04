@@ -7,6 +7,7 @@ const ProjectList = [
         category:"Backend",
         img:`${proj1}`,
         description:"blabla",
+        live: "https://github.com/vanthuynh"
     },
     {
         id:"2",
@@ -14,6 +15,7 @@ const ProjectList = [
         category:"Frontend",
         img:`${proj1}`,
         description:"blabla",
+        live: "https://github.com/vanthuynh"
     },
     {
         id:"3",
@@ -21,6 +23,7 @@ const ProjectList = [
         category:"Backend",
         img:`${proj1}`,
         description:"blabla",
+        live: "https://github.com/vanthuynh"
     },
 ];
 

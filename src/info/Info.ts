@@ -26,7 +26,7 @@ export const info = {
   firstName: "Van",
   lastName: "Huynh",
   initials: "vh", // the example uses first and last, but feel free to use three or more if you like.
-  position: " an aspiring Software Engineer",
+  position: " Software Engineer",
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -42,11 +42,11 @@ export const info = {
     },
     {
       emoji: "💼",
-      text: "SWE intern at Wunderkind Co.",
+      text: "Computer Science Undergraduate",
     },
     {
       emoji: "📧",
-      text: "vthuynh@cpp.edu",
+      text: "vanthuynh0@gmail.com",
     },
   ],
   socials: [

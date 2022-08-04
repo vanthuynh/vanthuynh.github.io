@@ -36,7 +36,6 @@
     top: 0em;
     width: 100%;
     height: 20.5em;
-    // margin: 2.25em auto;
     padding: 0;
     animation-name: fadeInUp;
     animation-duration: 1s;
@@ -195,26 +194,16 @@
 
 /* Project list  */
 
-#p-shooting-ai {
-    background: url("../../img/weater-react-app-animation.gif") no-repeat center center;
-    background-size: cover;
-    opacity: 0; 
-}
+// #p-shooting-ai {
+//     background: url("../../img/weater-react-app-animation.gif") no-repeat center center;
+//     background-size: cover;
+//     opacity: 0; 
+// }
 
-#p-bear-maps {
-    background: url("../../img/weater-react-app-animation.gif");
-    background-size: cover;
-}
-
-#p-ants {
-    background: url("../../img/weater-react-app-animation.gif");
-    background-size: cover;
-}
-
-#p-blog {
-    background: url("../../img/weater-react-app-animation.gif");
-    background-size: cover;
-}
+// #p-bear-maps {
+//     background: url("../../img/weater-react-app-animation.gif");
+//     background-size: cover;
+// }
 
 @keyframes fadeInUp {
     from {
@@ -314,3 +303,7 @@ button {
     border: 0;
     outline: none;
 }
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

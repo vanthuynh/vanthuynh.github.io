@@ -8,17 +8,26 @@ interface CallbackProps {
     menuItems: any;
 }
 
+const styles = {
+  wrapper: {
+    display: "flex",
+    justifyContent:"center",
+  } as React.CSSProperties,
+  butt: {
+    fontColor:"red",
+    fontStyle:"bold",
+    padding:"0 2em",
+    margin:"0 0.5em",
+  } as React.CSSProperties,
+};
+
 const Buttons = ({ filterItem, setItem, menuItems }: CallbackProps) => {
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div style={styles.wrapper}>
         {menuItems.map((Val, id) => {
           return (
-            <button
-              className="btn-dark text-white p-1 px-2 mx-5 btn fw-bold"
-              onClick={() => filterItem(Val)}
-              key={id}
-            >
+            <button style={styles.butt} onClick={() => filterItem(Val)} key={id}>
               {Val}
             </button>
           );

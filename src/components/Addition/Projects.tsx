@@ -6,6 +6,7 @@ import ProjectList from './ProjectList';
 import Buttons from './Buttons';
 
 export function Projects () {
+  // https://www.freecodecamp.org/news/how-to-make-a-filter-component-in-react/
     const [item, setItem] = React.useState(ProjectList);
 
   const menuItems = [...new Set(ProjectList.map((Val) => Val.category))];
@@ -17,9 +18,16 @@ export function Projects () {
     setItem(newItem);
   };
   return (
-    <Box display={"flex"} flexDirection={"column"} marginTop={"50px"}>
+    <Box 
+      display={"flex"} 
+      flexDirection={"column"} 
+      marginTop={"50px"}
+      minHeight={"100vh"}
+      maxWidth={"100vw"}
+      // bgcolor={"red"}
+    >
         <Stack>
-            <h1 className="text-3xl font-bold underline">
+            <h1 className="tw-text-3xl tw-font-bold tw-underline">
                 Projects
             </h1>
             <Buttons 
@@ -37,6 +45,7 @@ export function Projects () {
                     category={project.category}
                     img={project.img} 
                     description={project.description} 
+                    live={project.live}
                 />
             ))}
         </Stack>
