@@ -6,22 +6,22 @@ import { Box } from "@mui/material";
 import { info } from "../info/Info";
 
 const links = [
-  {
-    name: "Home",
-    to: "/",
-    active: "home",
-  },
+  // {
+  //   name: "Home",
+  //   to: "/",
+  //   active: "home",
+  // },
   // {
   //   name: "About Me",
   //   to: "/about",
   //   active: "about",
   // },
-  {
-    name: info.initials,
-    type: "initials",
-    to: "/",
-    active: "home",
-  },
+  // {
+  //   name: info.initials,
+  //   type: "initials",
+  //   to: "/",
+  //   active: "home",
+  // },
   // {
   //   name: "Portfolio",
   //   to: "/portfolio",
@@ -53,7 +53,7 @@ export default function Navbar({ darkMode, handleClick }: ThemeChange) {
         textTransform={"lowercase"}
         fontSize={"1rem"}
       >
-        {links.map((link, index) => (
+        {/* {links.map((link, index) => (
           <Box
             key={index}
             component={"li"}
@@ -67,7 +67,7 @@ export default function Navbar({ darkMode, handleClick }: ThemeChange) {
               {link.type && <h1>{link.name}</h1>}
             </Link>
           </Box>
-        ))}
+        ))} */}
         <li>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
         </li>

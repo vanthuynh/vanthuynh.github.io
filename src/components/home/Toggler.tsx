@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+import lightbulb from '../../img/lightbulb.png';
 
 interface ThemeChange {
   darkMode: boolean;
@@ -18,11 +19,15 @@ export default function Toggler({ darkMode, handleClick }: ThemeChange) {
     >
       {darkMode ? (
         <span onClick={handleClick} aria-label="Full Moon" role="img">
-          🌕
+          {/* 🌕 */}
+          {/* <img src={lightbulb} alt="switch theme icon" width="100" height="100" /> */}
+          💡
         </span>
       ) : (
         <span onClick={handleClick} aria-label="New Moon" role="img">
-          🌑
+          {/* 🌑 */}
+          {/* <img src={lightbulb} alt="switch theme icon" width="100" height="100" /> */}
+          💡
         </span>
       )}
     </Box>
