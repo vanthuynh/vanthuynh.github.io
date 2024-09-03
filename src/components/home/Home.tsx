@@ -25,7 +25,7 @@ export default function Home() {
     >
       <Canvas />
       <Box
-        // position={"absolute"}
+        position={"absolute"}
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
@@ -85,8 +85,9 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
-      <Box 
-        zIndex={"1"} 
+      {/*===================================== EXPERIENCE TIMELINE ===================================*/}
+      {/* <Box
+        zIndex={"1"}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
@@ -94,8 +95,9 @@ export default function Home() {
         maxWidth={"90%"}
         bgcolor={"transparent"}>
         <Experience />
-      </Box>
-      <Box
+      </Box> */}
+      {/*===================================== PROJECTS ===================================*/}
+      {/* <Box
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
@@ -103,7 +105,7 @@ export default function Home() {
         maxWidth={"90%"}
         bgcolor={"transparent"}>
         <Projects />
-      </Box>
+      </Box> */}
     </Box>
   );
 }
